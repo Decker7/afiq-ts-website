@@ -20,7 +20,7 @@
   --color-zinc-200: #71c9ce;
   --color-zinc-300: #5dafb5;
   --color-zinc-400: #376f74;
-  --color-zinc-500: #32686c;
+  --color-zinc-500: #2a5559;
   --color-zinc-600: #2a5559;
   --color-zinc-700: #23474a;
   --color-zinc-800: #183739;
@@ -74,7 +74,7 @@
 
   ::selection {
     background: #71c9ce;
-    color: #10292b;
+    color: var(--color-zinc-900);
   }
 
   :where(a, button):focus-visible {

@@ -221,14 +221,14 @@ function StackTiles() {
           <div
             key={technology.label}
             className={clsx(
-              'relative w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 shadow-sm ring-1 ring-zinc-900/5 sm:w-72 sm:rounded-2xl dark:bg-zinc-800 dark:ring-white/10',
+              'relative w-40 flex-none overflow-hidden rounded-xl bg-zinc-100 shadow-sm ring-1 ring-zinc-900/5 sm:w-56 sm:rounded-2xl dark:bg-zinc-800 dark:ring-white/10',
               rotations[technologyIndex % rotations.length],
             )}
           >
-            <div className="flex aspect-9/10 flex-col items-center justify-center gap-3 bg-white px-6 text-center dark:bg-zinc-900">
+            <div className="flex aspect-4/3 flex-col items-center justify-center gap-3 bg-white px-5 text-center dark:bg-zinc-900">
               <span
                 aria-hidden="true"
-                className="flex h-16 w-16 items-center justify-center rounded-full bg-zinc-100 text-lg font-bold tracking-tight text-zinc-700 ring-1 ring-zinc-900/5 dark:bg-zinc-800 dark:text-zinc-200 dark:ring-white/10"
+                className="flex h-12 w-12 items-center justify-center rounded-full bg-zinc-100 text-base font-bold tracking-tight text-zinc-700 ring-1 ring-zinc-900/5 sm:h-14 sm:w-14 sm:text-lg dark:bg-zinc-800 dark:text-zinc-200 dark:ring-white/10"
               >
                 {technology.initials}
               </span>
