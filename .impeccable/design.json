@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-08-09T13:43:38Z",
+  "generatedAt": "2026-08-09T14:45:28Z",
   "title": "Design System: Muhammad Afiq Apandi Portfolio",
   "extensions": {
     "colorMeta": {
@@ -158,20 +158,28 @@
       "css": ".ds-info-panel { border: 1px solid var(--color-zinc-100, #a6e3e9); border-radius: 16px; padding: 24px; background: var(--color-white, #e3fdfd); color: var(--color-zinc-600, #2a5559); } .ds-info-title { margin: 0; color: var(--color-zinc-900, #10292b); font: 600 14px/24px ui-sans-serif, system-ui, sans-serif; } .ds-info-copy { margin: 8px 0 0; font: 400 14px/24px ui-sans-serif, system-ui, sans-serif; } .ds-info-link { display: inline-block; margin-top: 16px; color: var(--color-teal-500, #2a7479); font: 500 14px/24px ui-sans-serif, system-ui, sans-serif; text-decoration: none; } .ds-info-link:hover { color: var(--color-teal-600, #215d61); } .ds-info-link:focus-visible { outline: 3px solid var(--color-teal-600, #215d61); outline-offset: 3px; }"
     },
     {
+      "name": "Experience Ledger Entry",
+      "kind": "custom",
+      "refersTo": "evidence-card",
+      "description": "A detailed chronological evidence entry with an aligned date, compact technology tags, separated outcomes, and an explicit external link.",
+      "html": "<article class=\"ds-experience\"><header class=\"ds-experience-meta\"><span>EnsoNex Sdn. Bhd.</span><time>2026 - Present</time></header><h3>Full-Stack Developer</h3><ul class=\"ds-experience-tags\"><li>React Native</li><li>GraphQL</li></ul><ul class=\"ds-experience-outcomes\"><li>Built a browser-based signing workflow.</li></ul><a href=\"#\">Company website ↗</a></article>",
+      "css": ".ds-experience { padding-block: 40px; border-bottom: 1px solid var(--color-zinc-100, #a6e3e9); color: var(--color-zinc-600, #2a5559); } .ds-experience-meta { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; font: 500 14px/24px ui-sans-serif, system-ui, sans-serif; } .ds-experience h3 { margin: 16px 0 0; color: var(--color-zinc-800, #183739); font: 600 18px/28px ui-sans-serif, system-ui, sans-serif; letter-spacing: -0.025em; } .ds-experience-tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 20px 0 0; padding: 0; list-style: none; } .ds-experience-tags li { border: 1px solid rgb(24 55 57 / 0.05); border-radius: 9999px; padding: 4px 12px; background: var(--color-zinc-50, #cbf1f5); font: 500 12px/16px ui-sans-serif, system-ui, sans-serif; } .ds-experience-outcomes { margin: 24px 0 0; padding-left: 20px; font: 400 14px/24px ui-sans-serif, system-ui, sans-serif; } .ds-experience a { display: inline-block; margin-top: 24px; color: var(--color-teal-500, #2a7479); font: 600 14px/24px ui-sans-serif, system-ui, sans-serif; text-decoration: none; }"
+    },
+    {
       "name": "Technology Tile",
       "kind": "custom",
       "refersTo": "evidence-card",
       "description": "A gently rotated technology marker used as the portfolio's most expressive repeated object.",
       "html": "<div class=\"ds-tech-tile\"><span class=\"ds-tech-mark\">GQL</span><span class=\"ds-tech-label\">AppSync GraphQL</span></div>",
-      "css": ".ds-tech-tile { display: flex; aspect-ratio: 9 / 10; width: 176px; flex-direction: column; align-items: center; justify-content: center; gap: 12px; transform: rotate(2deg); border: 1px solid rgb(24 55 57 / 0.05); border-radius: 12px; background: var(--color-white, #e3fdfd); color: var(--color-zinc-800, #183739); box-shadow: 0 1px 2px rgb(0 0 0 / 0.05); } .ds-tech-mark { display: flex; width: 64px; height: 64px; align-items: center; justify-content: center; border-radius: 9999px; background: var(--color-zinc-100, #a6e3e9); color: var(--color-zinc-700, #23474a); font: 700 18px/28px ui-sans-serif, system-ui, sans-serif; } .ds-tech-label { padding: 0 24px; text-align: center; font: 600 14px/24px ui-sans-serif, system-ui, sans-serif; }"
+      "css": ".ds-tech-tile { display: flex; aspect-ratio: 4 / 3; width: 160px; flex-direction: column; align-items: center; justify-content: center; gap: 12px; transform: rotate(2deg); border: 1px solid rgb(24 55 57 / 0.05); border-radius: 12px; background: var(--color-white, #e3fdfd); color: var(--color-zinc-800, #183739); box-shadow: 0 1px 2px rgb(0 0 0 / 0.05); } .ds-tech-mark { display: flex; width: 48px; height: 48px; align-items: center; justify-content: center; border-radius: 9999px; background: var(--color-zinc-100, #a6e3e9); color: var(--color-zinc-700, #23474a); font: 700 16px/24px ui-sans-serif, system-ui, sans-serif; } .ds-tech-label { padding: 0 20px; text-align: center; font: 600 14px/24px ui-sans-serif, system-ui, sans-serif; }"
     },
     {
-      "name": "Identity Badge",
+      "name": "Portrait Avatar",
       "kind": "custom",
       "refersTo": "identity-badge",
-      "description": "A compact circular monogram for people, roles, or projects that need a recognizable anchor.",
-      "html": "<span class=\"ds-identity-badge\">MA</span>",
-      "css": ".ds-identity-badge { display: inline-flex; width: 40px; height: 40px; align-items: center; justify-content: center; border: 1px solid rgb(24 55 57 / 0.05); border-radius: 9999px; background: var(--color-white, #e3fdfd); color: var(--color-zinc-700, #23474a); box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1); font: 600 12px/24px ui-sans-serif, system-ui, sans-serif; letter-spacing: -0.025em; }"
+      "description": "The canonical professional portrait, shown as a close circular header crop or a larger straight 4:5 About frame aligned with its contact rail.",
+      "html": "<img class=\"ds-portrait-avatar\" src=\"/afiq-photo.jpg\" alt=\"Muhammad Afiq Apandi\">",
+      "css": ".ds-portrait-avatar { width: 40px; height: 40px; border: 1px solid rgb(24 55 57 / 0.05); border-radius: 9999px; background: var(--color-white, #e3fdfd); object-fit: cover; object-position: center 28%; box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1); } .ds-portrait-frame { display: block; width: 100%; max-width: 384px; aspect-ratio: 4 / 5; border-radius: 16px; background: var(--color-zinc-100, #a6e3e9); object-fit: cover; object-position: center; box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.15), 0 4px 6px -4px rgb(0 0 0 / 0.15); }"
     }
   ],
   "narrative": {
