@@ -1,0 +1,234 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-08-09T13:43:38Z",
+  "title": "Design System: Muhammad Afiq Apandi Portfolio",
+  "extensions": {
+    "colorMeta": {
+      "sea-glass-paper": {
+        "role": "neutral",
+        "displayName": "Sea-Glass Paper",
+        "canonical": "#e3fdfd",
+        "tonalRamp": ["#071b1d", "#0f3033", "#18494d", "#2a7479", "#71c9ce", "#a6e3e9", "#cbf1f5", "#e3fdfd"]
+      },
+      "sea-glass-mist": {
+        "role": "neutral",
+        "displayName": "Sea-Glass Mist",
+        "canonical": "#cbf1f5",
+        "tonalRamp": ["#071b1d", "#0f3033", "#18494d", "#2a7479", "#71c9ce", "#a6e3e9", "#cbf1f5", "#e3fdfd"]
+      },
+      "sea-glass-tint": {
+        "role": "neutral",
+        "displayName": "Sea-Glass Tint",
+        "canonical": "#a6e3e9",
+        "tonalRamp": ["#071b1d", "#0f3033", "#18494d", "#2a7479", "#71c9ce", "#a6e3e9", "#cbf1f5", "#e3fdfd"]
+      },
+      "signal-teal": {
+        "role": "primary",
+        "displayName": "Signal Teal",
+        "canonical": "#71c9ce",
+        "tonalRamp": ["#071b1d", "#0f3033", "#18494d", "#2a7479", "#71c9ce", "#a6e3e9", "#cbf1f5", "#e3fdfd"]
+      },
+      "action-teal": {
+        "role": "primary",
+        "displayName": "Action Teal",
+        "canonical": "#2a7479",
+        "tonalRamp": ["#071b1d", "#0f3033", "#18494d", "#2a7479", "#71c9ce", "#a6e3e9", "#cbf1f5", "#e3fdfd"]
+      },
+      "action-teal-deep": {
+        "role": "primary",
+        "displayName": "Deep Action Teal",
+        "canonical": "#215d61",
+        "tonalRamp": ["#071b1d", "#0f3033", "#18494d", "#215d61", "#71c9ce", "#a6e3e9", "#cbf1f5", "#e3fdfd"]
+      },
+      "graphite-ink": {
+        "role": "neutral",
+        "displayName": "Graphite Ink",
+        "canonical": "#183739",
+        "tonalRamp": ["#071b1d", "#0f3033", "#183739", "#2a5559", "#376f74", "#71c9ce", "#a6e3e9", "#e3fdfd"]
+      },
+      "body-ink": {
+        "role": "neutral",
+        "displayName": "Body Ink",
+        "canonical": "#2a5559",
+        "tonalRamp": ["#071b1d", "#0f3033", "#183739", "#2a5559", "#376f74", "#71c9ce", "#a6e3e9", "#e3fdfd"]
+      },
+      "muted-ink": {
+        "role": "neutral",
+        "displayName": "Muted Ink",
+        "canonical": "#376f74",
+        "tonalRamp": ["#071b1d", "#0f3033", "#183739", "#2a5559", "#376f74", "#71c9ce", "#a6e3e9", "#e3fdfd"]
+      },
+      "night-canvas": {
+        "role": "neutral",
+        "displayName": "Night Canvas",
+        "canonical": "#071b1d",
+        "tonalRamp": ["#071b1d", "#0f3033", "#18494d", "#2a7479", "#71c9ce", "#a6e3e9", "#cbf1f5", "#e3fdfd"]
+      },
+      "night-surface": {
+        "role": "neutral",
+        "displayName": "Night Surface",
+        "canonical": "#0f3033",
+        "tonalRamp": ["#071b1d", "#0f3033", "#18494d", "#2a7479", "#71c9ce", "#a6e3e9", "#cbf1f5", "#e3fdfd"]
+      },
+      "night-raised": {
+        "role": "neutral",
+        "displayName": "Night Raised",
+        "canonical": "#18494d",
+        "tonalRamp": ["#071b1d", "#0f3033", "#18494d", "#2a7479", "#71c9ce", "#a6e3e9", "#cbf1f5", "#e3fdfd"]
+      }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "Large-screen portfolio and page statements." },
+      "headline": { "displayName": "Headline", "purpose": "Mobile page statements and prominent error titles." },
+      "title": { "displayName": "Title", "purpose": "Card titles and named evidence." },
+      "body": { "displayName": "Body", "purpose": "Introductions and professional narrative." },
+      "label": { "displayName": "Label", "purpose": "Navigation, buttons, and compact actions." },
+      "meta": { "displayName": "Meta", "purpose": "Dates and secondary role details." }
+    },
+    "shadows": [
+      {
+        "name": "identity-lift",
+        "value": "0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1)",
+        "purpose": "Separates avatars and compact identity marks from the reading surface."
+      },
+      {
+        "name": "floating-control-lift",
+        "value": "0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1)",
+        "purpose": "Keeps navigation and theme controls legible above page content."
+      }
+    ],
+    "motion": [
+      {
+        "name": "state-standard",
+        "value": "150ms cubic-bezier(0.4, 0, 0.2, 1)",
+        "purpose": "Default color, opacity, and scale transition for interactive states."
+      },
+      {
+        "name": "panel-enter",
+        "value": "150ms cubic-bezier(0, 0, 0.2, 1)",
+        "purpose": "Mobile navigation panel entrance."
+      }
+    ],
+    "breakpoints": [
+      { "name": "sm", "value": "640px" },
+      { "name": "md", "value": "768px" },
+      { "name": "lg", "value": "1024px" },
+      { "name": "xl", "value": "1280px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The strongest compact action, using deep ink rather than the light signal color for contrast.",
+      "html": "<button class=\"ds-btn-primary\">DOWNLOAD CV</button>",
+      "css": ".ds-btn-primary { display: inline-flex; align-items: center; justify-content: center; gap: 8px; border: 0; border-radius: 6px; padding: 8px 12px; background: var(--color-zinc-800, #183739); color: var(--color-white, #e3fdfd); font: 600 14px/24px ui-sans-serif, system-ui, sans-serif; transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1), color 150ms cubic-bezier(0.4, 0, 0.2, 1); } .ds-btn-primary:hover { background: var(--color-zinc-700, #23474a); } .ds-btn-primary:focus-visible { outline: 3px solid var(--color-teal-600, #215d61); outline-offset: 3px; } .ds-btn-primary:active { background: var(--color-zinc-800, #183739); color: rgb(227 253 253 / 0.7); transition: none; }"
+    },
+    {
+      "name": "Secondary Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "A quiet full-width or inline action that sits within the sea-glass surface family.",
+      "html": "<button class=\"ds-btn-secondary\">VIEW EXPERIENCE</button>",
+      "css": ".ds-btn-secondary { display: inline-flex; align-items: center; justify-content: center; gap: 8px; border: 0; border-radius: 6px; padding: 8px 12px; background: var(--color-zinc-50, #cbf1f5); color: var(--color-zinc-900, #10292b); font: 500 14px/24px ui-sans-serif, system-ui, sans-serif; transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1); } .ds-btn-secondary:hover { background: var(--color-zinc-100, #a6e3e9); } .ds-btn-secondary:focus-visible { outline: 3px solid var(--color-teal-600, #215d61); outline-offset: 3px; } .ds-btn-secondary:active { color: rgb(16 41 43 / 0.65); transition: none; }"
+    },
+    {
+      "name": "Navigation Pill",
+      "kind": "nav",
+      "refersTo": "navigation-pill",
+      "description": "A floating desktop index with a precise active signal and soft ambient lift.",
+      "html": "<nav class=\"ds-nav\" aria-label=\"Primary\"><a class=\"ds-nav-item ds-nav-active\" href=\"#\">Home</a><a class=\"ds-nav-item\" href=\"#\">Experience</a><a class=\"ds-nav-item\" href=\"#\">Projects</a></nav>",
+      "css": ".ds-nav { display: inline-flex; border-radius: 9999px; padding: 0 12px; background: rgb(227 253 253 / 0.9); box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1); color: var(--color-zinc-800, #183739); font: 500 14px/24px ui-sans-serif, system-ui, sans-serif; } .ds-nav-item { position: relative; padding: 8px 12px; color: inherit; text-decoration: none; transition: color 150ms cubic-bezier(0.4, 0, 0.2, 1); } .ds-nav-item:hover, .ds-nav-active { color: var(--color-teal-500, #2a7479); } .ds-nav-item:focus-visible { outline: 3px solid var(--color-teal-600, #215d61); outline-offset: 1px; border-radius: 9999px; } .ds-nav-active::after { content: ''; position: absolute; right: 4px; bottom: 0; left: 4px; height: 1px; background: var(--color-teal-500, #2a7479); opacity: 0.55; }"
+    },
+    {
+      "name": "Evidence Card",
+      "kind": "card",
+      "refersTo": "evidence-card",
+      "description": "A flat evidence unit whose full hit area gains a sea-glass hover field.",
+      "html": "<article class=\"ds-evidence-card\"><p class=\"ds-evidence-meta\">ENS0NEX / DMSA GLOBAL</p><a class=\"ds-evidence-link\" href=\"#\">Browser-based e-signature workflow</a><p class=\"ds-evidence-copy\">One browser link replaces a multi-step signing exchange.</p><span class=\"ds-evidence-action\">View experience →</span></article>",
+      "css": ".ds-evidence-card { position: relative; display: flex; flex-direction: column; align-items: flex-start; border-radius: 16px; padding: 24px; background: var(--color-white, #e3fdfd); color: var(--color-zinc-800, #183739); transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1), transform 150ms cubic-bezier(0.4, 0, 0.2, 1); } .ds-evidence-card:hover { background: var(--color-zinc-50, #cbf1f5); transform: scale(1.01); } .ds-evidence-meta { order: -1; margin: 0 0 12px; color: var(--color-zinc-400, #376f74); font: 400 13px/24px ui-sans-serif, system-ui, sans-serif; } .ds-evidence-link { color: inherit; font: 600 16px/28px ui-sans-serif, system-ui, sans-serif; letter-spacing: -0.025em; text-decoration: none; } .ds-evidence-link:focus-visible { outline: 3px solid var(--color-teal-600, #215d61); outline-offset: 3px; } .ds-evidence-copy { margin: 8px 0 0; color: var(--color-zinc-600, #2a5559); font: 400 14px/24px ui-sans-serif, system-ui, sans-serif; } .ds-evidence-action { margin-top: 16px; color: var(--color-teal-500, #2a7479); font: 500 14px/24px ui-sans-serif, system-ui, sans-serif; }"
+    },
+    {
+      "name": "Information Panel",
+      "kind": "card",
+      "refersTo": "information-panel",
+      "description": "A bordered panel for contact details, work summaries, or other compact supporting information.",
+      "html": "<section class=\"ds-info-panel\"><h3 class=\"ds-info-title\">Contact</h3><p class=\"ds-info-copy\">For professional enquiries, use a verified contact channel.</p><a class=\"ds-info-link\" href=\"#\">LinkedIn</a></section>",
+      "css": ".ds-info-panel { border: 1px solid var(--color-zinc-100, #a6e3e9); border-radius: 16px; padding: 24px; background: var(--color-white, #e3fdfd); color: var(--color-zinc-600, #2a5559); } .ds-info-title { margin: 0; color: var(--color-zinc-900, #10292b); font: 600 14px/24px ui-sans-serif, system-ui, sans-serif; } .ds-info-copy { margin: 8px 0 0; font: 400 14px/24px ui-sans-serif, system-ui, sans-serif; } .ds-info-link { display: inline-block; margin-top: 16px; color: var(--color-teal-500, #2a7479); font: 500 14px/24px ui-sans-serif, system-ui, sans-serif; text-decoration: none; } .ds-info-link:hover { color: var(--color-teal-600, #215d61); } .ds-info-link:focus-visible { outline: 3px solid var(--color-teal-600, #215d61); outline-offset: 3px; }"
+    },
+    {
+      "name": "Technology Tile",
+      "kind": "custom",
+      "refersTo": "evidence-card",
+      "description": "A gently rotated technology marker used as the portfolio's most expressive repeated object.",
+      "html": "<div class=\"ds-tech-tile\"><span class=\"ds-tech-mark\">GQL</span><span class=\"ds-tech-label\">AppSync GraphQL</span></div>",
+      "css": ".ds-tech-tile { display: flex; aspect-ratio: 9 / 10; width: 176px; flex-direction: column; align-items: center; justify-content: center; gap: 12px; transform: rotate(2deg); border: 1px solid rgb(24 55 57 / 0.05); border-radius: 12px; background: var(--color-white, #e3fdfd); color: var(--color-zinc-800, #183739); box-shadow: 0 1px 2px rgb(0 0 0 / 0.05); } .ds-tech-mark { display: flex; width: 64px; height: 64px; align-items: center; justify-content: center; border-radius: 9999px; background: var(--color-zinc-100, #a6e3e9); color: var(--color-zinc-700, #23474a); font: 700 18px/28px ui-sans-serif, system-ui, sans-serif; } .ds-tech-label { padding: 0 24px; text-align: center; font: 600 14px/24px ui-sans-serif, system-ui, sans-serif; }"
+    },
+    {
+      "name": "Identity Badge",
+      "kind": "custom",
+      "refersTo": "identity-badge",
+      "description": "A compact circular monogram for people, roles, or projects that need a recognizable anchor.",
+      "html": "<span class=\"ds-identity-badge\">MA</span>",
+      "css": ".ds-identity-badge { display: inline-flex; width: 40px; height: 40px; align-items: center; justify-content: center; border: 1px solid rgb(24 55 57 / 0.05); border-radius: 9999px; background: var(--color-white, #e3fdfd); color: var(--color-zinc-700, #23474a); box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1); font: 600 12px/24px ui-sans-serif, system-ui, sans-serif; letter-spacing: -0.025em; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Quiet Engineering Ledger",
+    "overview": "The portfolio behaves like a carefully maintained record of professional evidence: calm enough to read without friction, structured enough to inspect quickly, and specific enough to earn trust. Its sea-glass atmosphere is light and optimistic, while deep teal ink keeps claims, navigation, and actions grounded.\n\nThe system is airy rather than sparse. Generous intervals separate major ideas, compact typography keeps supporting facts efficient, and interaction appears through precise changes in color, scale, and focus rather than spectacle. The visual language rejects neon or cyberpunk styling, loud gradients, dense dashboard chrome, and ornamental motion.",
+    "keyCharacteristics": [
+      "Cool sea-glass surfaces with deep teal ink and purposeful signal color.",
+      "Evidence-first hierarchy with strong headings, readable supporting copy, and restrained metadata.",
+      "A centered portfolio frame that becomes simpler and more linear on smaller screens.",
+      "Quietly tactile components with generous hit areas and visible interaction states.",
+      "Paired light and dark themes composed from the same cyan-teal family."
+    ],
+    "rules": [
+      {
+        "name": "The Evidence Signal Rule",
+        "body": "Signal color identifies navigation, action, focus, or inspectable evidence; it is not scattered as decoration.",
+        "section": "colors"
+      },
+      {
+        "name": "The Contrast Before Fidelity Rule",
+        "body": "The four supplied palette colors own the atmosphere, but deep derived inks carry text whenever the original light swatches cannot meet WCAG 2.2 AA.",
+        "section": "colors"
+      },
+      {
+        "name": "The Quiet Hierarchy Rule",
+        "body": "Use no more type styles than the evidence needs; scale and weight establish order without decorative casing, exaggerated tracking, or display-font theatrics.",
+        "section": "typography"
+      },
+      {
+        "name": "The One Reading Path Rule",
+        "body": "Responsive layouts may change column count, but headings, evidence, and next actions must retain an obvious top-to-bottom sequence.",
+        "section": "layout"
+      },
+      {
+        "name": "The Lift Is Earned Rule",
+        "body": "A shadow indicates a floating or identity-bearing object; ordinary content structure uses spacing, tint, or a ring instead.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Radius Has Rank Rule",
+        "body": "Larger radii belong to larger containing surfaces; do not turn ordinary content blocks into a field of interchangeable pills.",
+        "section": "shapes"
+      }
+    ],
+    "dos": [
+      "Do use Sea-Glass Paper, Mist, Tint, and Signal Teal as the dominant atmospheric family.",
+      "Do use the derived deep teal inks for body text, actions, and focus states that require stronger contrast.",
+      "Do keep claims easy to scan through clear headings, measured line lengths, and generous section intervals.",
+      "Do preserve visible keyboard focus and a non-color cue for active or actionable content.",
+      "Do compose dark mode with distinct canvas, surface, and raised-control roles."
+    ],
+    "donts": [
+      "Don't use neon or cyberpunk motifs, loud gradients, dense dashboard chrome, or ornamental motion.",
+      "Don't use Signal Teal for small body text on light surfaces; use Action Teal or a deeper ink.",
+      "Don't scatter accent color across decoration that does not communicate action, selection, focus, or evidence.",
+      "Don't add permanent shadows to ordinary cards when spacing, tint, or a one-pixel ring already defines the structure.",
+      "Don't convert large content surfaces into pills or make every repeated item a boxed card."
+    ]
+  }
+}
