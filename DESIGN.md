@@ -198,7 +198,7 @@ The system uses restrained layering. Borders and one-pixel rings define most str
 
 ## Shapes
 
-Shape communicates component rank. Compact buttons use gently curved 6px corners, technology tiles use 12px corners, content cards and panels use 16px corners, and the mobile navigation panel uses 24px corners. Fully rounded pills are reserved for compact navigation, circular identity marks, and theme controls.
+Shape communicates component rank. Compact buttons use gently curved 6px corners, technology tiles use 12px corners, content cards and portrait frames use 16px corners, and the mobile navigation panel uses 24px corners. Fully rounded pills are reserved for compact navigation, circular portrait avatars, and theme controls.
 
 **The Radius Has Rank Rule.** Larger radii belong to larger containing surfaces; do not turn ordinary content blocks into a field of interchangeable pills.
 
@@ -215,7 +215,7 @@ Shape communicates component rank. Compact buttons use gently curved 6px corners
 
 - **Corner Style:** Content panels use 16px corners when they carry a visible boundary.
 - **Background:** Reading surfaces use Sea-Glass Paper; hoverable evidence cards reveal Sea-Glass Mist behind their full hit area.
-- **Shadow Strategy:** Evidence cards stay flat; only identity badges inside them receive soft lift.
+- **Shadow Strategy:** Evidence cards stay flat; only compact identity portraits inside them receive soft lift.
 - **Border:** Information panels use a one-pixel Sea-Glass Tint border, softened in dark mode.
 - **Internal Padding:** Bordered information panels use 24px; evidence-card hit areas extend beyond the text without adding a permanent box.
 
@@ -223,13 +223,17 @@ Shape communicates component rank. Compact buttons use gently curved 6px corners
 
 Desktop navigation is a floating pill with compact labels, an active teal text state, and a thin fading underline. Mobile navigation uses a 24px popover with divided, full-width rows. The theme control repeats the pill language as a circular companion.
 
+### Portrait Imagery
+
+The supplied professional portrait is the canonical identity image. Header instances use a close circular crop centered on the face, while the About page preserves more of the formal portrait in a straight 4:5 frame capped at 384px. The larger portrait uses one soft identity lift, a centered crop that trims excess white headroom, and a fixed full-width wrapper aligned with the contact links below it. Both use stable intrinsic dimensions and meaningful alternative text where the image carries identity.
+
 ### Technology Tiles
 
-Technology tiles are the most expressive repeated objects: lightly rotated, 12px to 16px rounded surfaces with a centered circular mark and concise technology label. The rotation varies gently; color and shadow remain restrained.
+Technology tiles are the most expressive repeated objects: compact, lightly rotated 12px to 16px rounded surfaces with a centered circular mark and concise technology label. The rotation varies gently; color and shadow remain restrained so project evidence enters the viewport promptly.
 
 ### Section Ledger
 
-Experience and skill sections become a four-column ledger at the medium breakpoint: a compact section label occupies the first column and evidence occupies the remaining three. A subtle vertical rule reinforces the division without turning the page into dashboard chrome.
+Experience and skill sections become a four-column ledger at the medium breakpoint: a compact section label occupies the first column and evidence occupies the remaining three. A subtle vertical rule reinforces the division without turning the page into dashboard chrome. Detailed experience entries use quiet horizontal separators, right-aligned tabular dates, compact technology tags, and explicit external links instead of turning the full narrative into one oversized hover target.
 
 ## Do's and Don'ts
 

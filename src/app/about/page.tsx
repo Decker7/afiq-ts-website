@@ -1,9 +1,11 @@
 import { type Metadata } from 'next'
+import Image from 'next/image'
 import Link from 'next/link'
 import clsx from 'clsx'
 
 import { Container } from '@/components/Container'
 import { GitHubIcon, LinkedInIcon } from '@/components/SocialIcons'
+import afiqPhoto from '@/images/afiq-photo.jpg'
 
 function SocialLink({
   className,
@@ -63,25 +65,13 @@ export default function About() {
     <Container className="mt-16 sm:mt-32">
       <div className="grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:grid-rows-[auto_1fr] lg:gap-y-12">
         <div className="lg:pl-20">
-          <div className="max-w-xs px-2.5 lg:max-w-none">
-            <div
-              role="img"
-              aria-label="Muhammad Afiq Apandi, Full-Stack Developer"
-              className="flex aspect-square rotate-3 flex-col items-center justify-center rounded-2xl bg-zinc-100 px-8 text-center ring-1 ring-zinc-900/5 dark:bg-zinc-800 dark:ring-white/10"
-            >
-              <span
-                aria-hidden="true"
-                className="text-6xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100"
-              >
-                MA
-              </span>
-              <span
-                aria-hidden="true"
-                className="mt-4 text-sm font-medium text-zinc-500 dark:text-zinc-400"
-              >
-                Full-Stack Developer
-              </span>
-            </div>
+          <div className="w-full max-w-48 sm:max-w-xs lg:max-w-sm">
+            <Image
+              src={afiqPhoto}
+              alt="Muhammad Afiq Apandi"
+              sizes="(min-width: 1024px) 384px, (min-width: 640px) 320px, 192px"
+              className="aspect-4/5 w-full rounded-2xl bg-zinc-100 object-cover object-center shadow-lg shadow-zinc-900/15 dark:bg-zinc-800 dark:shadow-black/30"
+            />
           </div>
         </div>
         <div className="lg:order-first lg:row-span-2">

@@ -1,6 +1,7 @@
 'use client'
 
 import { useEffect, useRef, useState } from 'react'
+import Image from 'next/image'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { useTheme } from 'next-themes'
@@ -13,6 +14,7 @@ import {
 import clsx from 'clsx'
 
 import { Container } from '@/components/Container'
+import afiqPhoto from '@/images/afiq-photo.jpg'
 
 function CloseIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   return (
@@ -82,9 +84,21 @@ function MobileNavItem({
   href: string
   children: React.ReactNode
 }) {
+  let isActive = usePathname() === href
+
   return (
     <li>
-      <PopoverButton as={Link} href={href} className="block py-2">
+      <PopoverButton
+        as={Link}
+        href={href}
+        aria-current={isActive ? 'page' : undefined}
+        className={clsx(
+          'block border-l-2 py-2 pl-3 transition-colors',
+          isActive
+            ? 'border-teal-500 font-semibold text-teal-500 dark:border-teal-400 dark:text-teal-400'
+            : 'border-transparent hover:text-teal-500 dark:hover:text-teal-400',
+        )}
+      >
         {children}
       </PopoverButton>
     </li>
@@ -144,6 +158,7 @@ function NavItem({
     <li>
       <Link
         href={href}
+        aria-current={isActive ? 'page' : undefined}
         className={clsx(
           'relative block px-3 py-2 transition',
           isActive
@@ -232,15 +247,16 @@ function Avatar({
       className={clsx(className, 'pointer-events-auto')}
       {...props}
     >
-      <span
-        aria-hidden="true"
+      <Image
+        src={afiqPhoto}
+        alt=""
+        priority
+        sizes={large ? '64px' : '36px'}
         className={clsx(
-          'flex items-center justify-center rounded-full bg-zinc-100 font-bold tracking-tight text-zinc-700 ring-1 ring-zinc-900/5 dark:bg-zinc-800 dark:text-zinc-200 dark:ring-white/10',
-          large ? 'h-16 w-16 text-base' : 'h-9 w-9 text-xs',
+          'rounded-full bg-zinc-100 object-cover object-[center_28%] ring-1 ring-zinc-900/5 dark:bg-zinc-800 dark:ring-white/10',
+          large ? 'h-16 w-16' : 'h-9 w-9',
         )}
-      >
-        MA
-      </span>
+      />
     </Link>
   )
 }
