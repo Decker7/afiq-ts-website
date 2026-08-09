@@ -1,16 +1,9 @@
 import { type Metadata } from 'next'
-import Image from 'next/image'
 import Link from 'next/link'
 import clsx from 'clsx'
 
 import { Container } from '@/components/Container'
-import {
-  GitHubIcon,
-  InstagramIcon,
-  LinkedInIcon,
-  XIcon,
-} from '@/components/SocialIcons'
-import portraitImage from '@/images/portrait.jpg'
+import { GitHubIcon, LinkedInIcon } from '@/components/SocialIcons'
 
 function SocialLink({
   className,
@@ -47,10 +40,22 @@ function MailIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   )
 }
 
+function WebsiteIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
+  return (
+    <svg viewBox="0 0 24 24" aria-hidden="true" {...props}>
+      <path
+        fillRule="evenodd"
+        d="M12 2.75a9.25 9.25 0 1 0 0 18.5 9.25 9.25 0 0 0 0-18.5ZM4.38 11.25a7.77 7.77 0 0 1 1.88-4.47 13.18 13.18 0 0 0 1.1 4.47H4.38Zm0 1.5h2.98a13.18 13.18 0 0 0-1.1 4.47 7.77 7.77 0 0 1-1.88-4.47Zm3.5 0h3.37v6.82c-1.46-.55-2.84-3.15-3.37-6.82Zm3.37-1.5H7.88c.53-3.67 1.91-6.27 3.37-6.82v6.82Zm1.5-6.82c1.46.55 2.84 3.15 3.37 6.82h-3.37V4.43Zm0 15.14v-6.82h3.37c-.53 3.67-1.91 6.27-3.37 6.82Zm3.89-8.32a13.18 13.18 0 0 0-1.1-4.47 7.77 7.77 0 0 1 1.88 4.47h-2.98 2.2Zm-1.1 5.97a13.18 13.18 0 0 0 1.1-4.47h2.98a7.77 7.77 0 0 1-1.88 4.47Z"
+        clipRule="evenodd"
+      />
+    </svg>
+  )
+}
+
 export const metadata: Metadata = {
   title: 'About',
   description:
-    'I’m Spencer Sharp. I live in New York City, where I design the future.',
+    'About Muhammad Afiq Apandi, a full-stack developer based in Cyberjaya, Malaysia.',
 }
 
 export default function About() {
@@ -59,68 +64,84 @@ export default function About() {
       <div className="grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:grid-rows-[auto_1fr] lg:gap-y-12">
         <div className="lg:pl-20">
           <div className="max-w-xs px-2.5 lg:max-w-none">
-            <Image
-              src={portraitImage}
-              alt=""
-              sizes="(min-width: 1024px) 32rem, 20rem"
-              className="aspect-square rotate-3 rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800"
-            />
+            <div
+              role="img"
+              aria-label="Muhammad Afiq Apandi, Full-Stack Developer"
+              className="flex aspect-square rotate-3 flex-col items-center justify-center rounded-2xl bg-zinc-100 px-8 text-center ring-1 ring-zinc-900/5 dark:bg-zinc-800 dark:ring-white/10"
+            >
+              <span
+                aria-hidden="true"
+                className="text-6xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100"
+              >
+                MA
+              </span>
+              <span
+                aria-hidden="true"
+                className="mt-4 text-sm font-medium text-zinc-500 dark:text-zinc-400"
+              >
+                Full-Stack Developer
+              </span>
+            </div>
           </div>
         </div>
         <div className="lg:order-first lg:row-span-2">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
-            I’m Spencer Sharp. I live in New York City, where I design the
-            future.
+            I’m Muhammad Afiq, a full-stack developer based in Cyberjaya,
+            Malaysia.
           </h1>
           <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
             <p>
-              I’ve loved making things for as long as I can remember, and wrote
-              my first program when I was 6 years old, just two weeks after my
-              mom brought home the brand new Macintosh LC 550 that I taught
-              myself to type on.
+              I work across a production React Native application and the
+              serverless AWS backend behind it, using AppSync GraphQL, Lambda,
+              DynamoDB, and Amplify Gen 2.
             </p>
             <p>
-              The only thing I loved more than computers as a kid was space.
-              When I was 8, I climbed the 40-foot oak tree at the back of our
-              yard while wearing my older sister’s motorcycle helmet, counted
-              down from three, and jumped — hoping the tree was tall enough that
-              with just a bit of momentum I’d be able to get to orbit.
+              At EnsoNex Sdn. Bhd. / DMSA Global, I designed and built an
+              e-signature workflow that replaced nine manual steps, two
+              third-party editor downloads, and several email round trips with
+              one link both parties sign in the browser.
             </p>
             <p>
-              I spent the next few summers indoors working on a rocket design,
-              while I recovered from the multiple surgeries it took to fix my
-              badly broken legs. It took nine iterations, but when I was 15 I
-              sent my dad’s Blackberry into orbit and was able to transmit a
-              photo back down to our family computer from space.
+              My production AWS work also covers EC2, Lightsail, CloudFormation,
+              Cognito, IAM, and CloudWatch. Before that, at Nexlaw AI, I worked
+              across more than 50 client websites on WordPress, Shopify, and
+              Wix, handling pages, maintenance, live-site issues, hosting, DNS,
+              and on-page SEO.
             </p>
             <p>
-              Today, I’m the founder of Planetaria, where we’re working on
-              civilian space suits and manned shuttle kits you can assemble at
-              home so that the next generation of kids really <em>can</em> make
-              it to orbit — from the comfort of their own backyards.
+              I earned a B.CompSci in Software Engineering with Honours from
+              Universiti Malaysia Pahang Al-Sultan Abdullah with a 3.53 CGPA and
+              a Yayasan Terengganu scholarship. I use Claude Code and Codex
+              daily for scaffolding, debugging, and self-review, while reading
+              and testing the work before it is merged.
             </p>
           </div>
         </div>
         <div className="lg:pl-20">
           <ul role="list">
-            <SocialLink href="#" icon={XIcon}>
-              Follow on X
-            </SocialLink>
-            <SocialLink href="#" icon={InstagramIcon} className="mt-4">
-              Follow on Instagram
-            </SocialLink>
-            <SocialLink href="#" icon={GitHubIcon} className="mt-4">
-              Follow on GitHub
-            </SocialLink>
-            <SocialLink href="#" icon={LinkedInIcon} className="mt-4">
-              Follow on LinkedIn
+            <SocialLink href="https://afiq.dev" icon={WebsiteIcon}>
+              Visit afiq.dev
             </SocialLink>
             <SocialLink
-              href="mailto:spencer@planetaria.tech"
+              href="https://github.com/Decker7"
+              icon={GitHubIcon}
+              className="mt-4"
+            >
+              View GitHub
+            </SocialLink>
+            <SocialLink
+              href="https://www.linkedin.com/in/muhammad-afiq-bin-apandi"
+              icon={LinkedInIcon}
+              className="mt-4"
+            >
+              View LinkedIn
+            </SocialLink>
+            <SocialLink
+              href="mailto:afiqm6526@gmail.com"
               icon={MailIcon}
               className="mt-8 border-t border-zinc-100 pt-8 dark:border-zinc-700/40"
             >
-              spencer@planetaria.tech
+              afiqm6526@gmail.com
             </SocialLink>
           </ul>
         </div>
