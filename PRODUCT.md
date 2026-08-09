@@ -37,6 +37,7 @@ The public identity is Muhammad Afiq Apandi, presented as a Full-Stack Developer
 ## Evidence on Hand
 
 - `public/muhammad-afiq-apandi-cv.pdf` is the primary résumé evidence shipped with the site.
+- `public/certificates/` contains the three user-supplied Scrimba certificates supporting the published course titles, completion dates, and course-length details.
 - `src/app/page.tsx`, `src/app/about/page.tsx`, `src/app/experience/page.tsx`, `src/app/projects/page.tsx`, and `src/app/skills/page.tsx` contain the current public portfolio narrative and supporting detail.
 - The repository currently includes concrete employment, project, education, technology, and outcome statements. Future work must preserve their evidentiary basis and must not fabricate testimonials, clients, benchmarks, awards, or additional metrics.
 

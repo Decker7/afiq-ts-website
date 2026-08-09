@@ -97,10 +97,55 @@ function ExperienceItem({
   )
 }
 
+function CertificateItem({
+  title,
+  completed,
+  details,
+  href,
+}: {
+  title: string
+  completed: string
+  details: string
+  href: string
+}) {
+  return (
+    <Card as="article" className="py-8 first:pt-0 last:pb-0">
+      <div className="relative z-10 flex w-full flex-col gap-2 sm:flex-row sm:items-baseline sm:justify-between">
+        <p className="flex items-center text-sm font-medium text-zinc-600 dark:text-zinc-300">
+          <span
+            aria-hidden="true"
+            className="mr-3 h-4 w-0.5 rounded-full bg-teal-500 dark:bg-teal-400"
+          />
+          Scrimba
+        </p>
+        <p className="shrink-0 text-sm font-medium tabular-nums text-zinc-400 dark:text-zinc-500">
+          {completed}
+        </p>
+      </div>
+      <h3 className="relative z-10 mt-4 text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">
+        {title}
+      </h3>
+      <p className="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">
+        {details}
+      </p>
+      <Link
+        href={href}
+        target="_blank"
+        rel="noreferrer"
+        className="relative z-10 mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-teal-500 transition-colors hover:text-teal-600 dark:text-teal-400 dark:hover:text-teal-300"
+      >
+        View certificate
+        <span className="sr-only">: {title}</span>
+        <ArrowUpRightIcon className="h-4 w-4 stroke-current" />
+      </Link>
+    </Card>
+  )
+}
+
 export const metadata: Metadata = {
   title: 'Experience',
   description:
-    'Professional experience and education for Muhammad Afiq Apandi.',
+    'Professional experience, education, and certifications for Muhammad Afiq Apandi.',
 }
 
 export default function Experience() {
@@ -176,6 +221,28 @@ export default function Experience() {
               Yayasan Terengganu scholarship.
             </Card.Description>
           </Card>
+        </ExperienceSection>
+        <ExperienceSection title="Certifications">
+          <div className="divide-y divide-zinc-100 dark:divide-zinc-700/40">
+            <CertificateItem
+              title="The Fullstack Developer Path"
+              completed="Aug 2026"
+              details="108.4 hours across 2,055 lessons."
+              href="/certificates/scrimba-fullstack-developer-path.pdf"
+            />
+            <CertificateItem
+              title="The AI Engineer Path"
+              completed="Aug 2026"
+              details="11.4 hours across 258 lessons."
+              href="/certificates/scrimba-ai-engineer-path.pdf"
+            />
+            <CertificateItem
+              title="Learn Context Engineering"
+              completed="Dec 2025"
+              details="15 lessons."
+              href="/certificates/scrimba-learn-context-engineering.pdf"
+            />
+          </div>
         </ExperienceSection>
       </div>
     </SimpleLayout>
